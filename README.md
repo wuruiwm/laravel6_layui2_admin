@@ -1,7 +1,7 @@
 本框架基于https://github.com/github-muzilong/laravel55-layuiadmin/tree/6.0 精简
 
 ## 安装步骤
-- git clone -b 6.0  https://github.com/github-muzilong/laravel55-layuiadmin.git
+- git clone https://github.com/wuruiwm/laravel6_layui2_admin.git
 - 复制config_example目录为config
 - 复制.env.example为.env并配置.env
 - composer update
