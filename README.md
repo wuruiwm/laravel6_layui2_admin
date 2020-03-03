@@ -6,4 +6,5 @@
 - 复制.env.example为.env并配置.env
 - composer update
 - 导入sql
+- 设置伪静态 设置运行目录为public
 - 登录后台：host/admin   帐号：admin   密码：123456
