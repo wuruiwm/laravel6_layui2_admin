@@ -1,0 +1,7 @@
+/.idea
+/.git
+/public/uploads
+/config
+/vendor
+/.env
+/readme.md
