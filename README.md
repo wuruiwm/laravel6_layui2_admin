@@ -7,4 +7,5 @@
 - composer update
 - 导入sql
 - 设置伪静态 设置运行目录为public
+- php artisan key:generate
 - 登录后台：host/admin   帐号：admin   密码：123456
