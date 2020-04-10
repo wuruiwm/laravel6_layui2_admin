@@ -14,7 +14,8 @@
         "laravel/tinker": "^1.0",
         "mews/captcha": "^3.0",
         "overtrue/laravel-wechat": "^5.0",
-        "spatie/laravel-permission": "^3.0"
+        "spatie/laravel-permission": "^3.0",
+        "symfony/http-foundation": "4.4.7"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
