@@ -47,7 +47,8 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
-            'throttle:60,1',
+            //'throttle:60,1',
+            //注释laravel默认api限流
             'bindings',
         ],
     ];

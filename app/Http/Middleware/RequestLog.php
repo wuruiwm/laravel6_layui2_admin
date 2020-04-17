@@ -34,9 +34,6 @@ class RequestLog
     	$response = $next($request);
     	$log .= "响应:".$this->jsonLog($response->original)."\n" . $sql . "执行" . $sql_num . "条sql 耗时:$sql_time" . "ms\n";
 		Log::info($log);
-		if(is_string($response->original) && $response->original == '404'){
-			return redirect("https://nikm.cn", 301);
-		}
         return $response;
 	}
 	protected function jsonLog($array = []){

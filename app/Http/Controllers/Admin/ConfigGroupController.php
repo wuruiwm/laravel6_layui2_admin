@@ -4,15 +4,13 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\ConfigGroupRequest;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use App\Models\ConfigGroup;
-use Illuminate\Support\Facades\DB;
 
-class ConfigGroupController extends Controller
+class ConfigGroupController extends BaseController
 {
     /**
      * 标签列表
@@ -65,17 +63,6 @@ class ConfigGroupController extends Controller
         }catch (\Exception $exception){
             return Redirect::back()->withErrors('添加失败');
         }
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
     }
 
     /**

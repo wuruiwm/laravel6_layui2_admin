@@ -11,7 +11,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\ConfigGroup;
-use App\Http\Controllers\Controller;
 use App\Models\Configuration;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
@@ -22,7 +21,7 @@ use DB;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Storage;
 
-class ConfigurationController extends Controller
+class ConfigurationController extends BaseController
 {
     /**
      * 配置主页

@@ -5,11 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests\ChangePasswordRequest;
 use App\Http\Requests\UserCreateRequest;
 use App\Http\Requests\UserUpdateRequest;
-use App\Models\Configuration;
 use App\Models\LoginLog;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
@@ -19,9 +17,8 @@ use Illuminate\Support\Facades\View;
 use App\Models\User;
 use App\Models\Role;
 use App\Models\Permission;
-use Illuminate\Validation\ValidationException;
 
-class UserController extends Controller
+class UserController extends BaseController
 {
 
     use AuthenticatesUsers;
@@ -171,17 +168,6 @@ class UserController extends Controller
         }catch (\Exception $exception){
             return Redirect::back()->withErrors('添加失败');
         }
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
     }
 
     /**

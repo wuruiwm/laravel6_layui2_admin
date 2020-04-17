@@ -5,14 +5,13 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests\PermissionCreateRequest;
 use App\Http\Requests\PermissionUpdateRequest;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use App\Models\Permission;
 
-class PermissionController extends Controller
+class PermissionController extends BaseController
 {
     /**
      * 权限列表
@@ -64,17 +63,6 @@ class PermissionController extends Controller
             return Redirect::back()->withErrors('添加失败');
         }
 
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
     }
 
     /**

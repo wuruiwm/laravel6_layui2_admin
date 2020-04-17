@@ -10,14 +10,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Configuration;
 use App\Models\LoginLog;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\View;
 
-class LoginLogController extends Controller
+class LoginLogController extends BaseController
 {
     /**
      * 登录日志主页

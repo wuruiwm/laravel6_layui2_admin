@@ -7,13 +7,12 @@ use App\Http\Requests\RoleUpdateRequest;
 use App\Models\Permission;
 use App\Models\Role;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 
-class RoleController extends Controller
+class RoleController extends BaseController
 {
     /**
      * 角色列表
@@ -64,17 +63,6 @@ class RoleController extends Controller
         }catch (\Exception $exception){
             return Redirect::back()->withErrors('添加失败');
         }
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
     }
 
     /**

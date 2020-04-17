@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\View;
 
-class IndexController extends Controller
+class IndexController extends BaseController
 {
     //后台布局
     public function layout()
